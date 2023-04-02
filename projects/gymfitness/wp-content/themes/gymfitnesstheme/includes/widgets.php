@@ -7,8 +7,8 @@ class GymFitness_Clases_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'gymfitness_widget',
-			esc_html__( 'GymFitness Clases', 'gymfitness' ), 
-			array( 'description' => esc_html__( 'Agrega las Clases como Widget', 'gymfitness' ), )
+			esc_html__( 'Portfolio', 'gymfitness' ),
+			array( 'description' => esc_html__( 'Add Portfolio as a Widget', 'gymfitness' ), )
 		);
 	}
 
