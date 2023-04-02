@@ -1,6 +1,6 @@
 <?php
     /**
-     * Template Name: Listado de clases
+     * Template Name: List Projects
      */
     get_header();
 ?>
@@ -9,7 +9,7 @@
         <ul class="listado-grid">
             <?php
                 $args = [
-                    'post_type' => 'gymfitness_clases'
+                    'post_type' => 'gymfitness_portfolio'
                 ];
                 $clases = new WP_Query($args);
 

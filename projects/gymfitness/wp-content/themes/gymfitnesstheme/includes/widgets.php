@@ -2,7 +2,7 @@
 
 if(!defined('ABSPATH')) die();
 
-class GymFitness_Clases_Widget extends WP_Widget {
+class GymFitness_Porfolio_Widget extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
@@ -17,7 +17,7 @@ class GymFitness_Clases_Widget extends WP_Widget {
         <ul class="clases-sidebar">
             <?php
                 $args = [
-                    'post_type' => 'gymfitness_clases',
+                    'post_type' => 'gymfitness_portfolio',
                     'posts_per_page' => $instance['cantidad'],
                     'order' => 'asc',
                     'order_by' => 'title'
@@ -85,6 +85,6 @@ class GymFitness_Clases_Widget extends WP_Widget {
 }
 
 function gymfitness_registrar_widget() {
-    register_widget( 'GymFitness_Clases_Widget' );
+    register_widget( 'GymFitness_Porfolio_Widget' );
 }
 add_action( 'widgets_init', 'gymfitness_registrar_widget' );

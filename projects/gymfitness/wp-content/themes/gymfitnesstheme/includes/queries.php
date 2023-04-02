@@ -6,7 +6,7 @@ function gymfitness_lista_clases($cantidad = -1) {
         <ul class="listado-grid">
             <?php
                 $args = array(
-                    'post_type' => 'gymfitness_clases',
+                    'post_type' => 'gymfitness_portfolio',
                     'posts_per_page' => $cantidad
                 );
                 $clases = new WP_Query($args);

@@ -12,11 +12,11 @@
 if (!defined('ABSPATH')) die();
 
 // Registrar Custom Post Type
-function gymfitness_clases_post_type() {
+function gymfitness_portfolio_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Portfolio', 'Post Type General Name', 'gymfitness' ),
-		'singular_name'         => _x( 'Project', 'Post Type Singular Name', 'gymfitness' ),
+		'singular_name'         => _x( 'Portfolio', 'Post Type Singular Name', 'gymfitness' ),
 		'menu_name'             => __( 'Portfolio', 'gymfitness' ),
 		'name_admin_bar'        => __( 'Portafolio', 'gymfitness' ),
 		'archives'              => __( 'Archives', 'gymfitness' ),
@@ -62,10 +62,10 @@ function gymfitness_clases_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'gymfitness_clases', $args );
+	register_post_type( 'gymfitness_portfolio', $args );
 
 }
-add_action( 'init', 'gymfitness_clases_post_type', 0 );
+add_action( 'init', 'gymfitness_portfolio_post_type', 0 );
 
 
 // Register Custom Post Type
