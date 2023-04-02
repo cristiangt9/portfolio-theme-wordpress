@@ -36,11 +36,11 @@
             </div>
         </div>
         <?php if(is_front_page()) { ?>
-            <div class="tagline text-center contenedor">
-                <h1 class="ml2">
+            <div class="tagline contenedor">
+                <h1 class="ml2 text-center">
                     <?php the_field('hero_heading'); ?>
                 </h1>
-                <p><?php the_field('hero_text'); ?></p>
+                <p class="text-justify"><?php the_field('hero_text'); ?></p>
             </div>
         <?php } ?>
     </header>

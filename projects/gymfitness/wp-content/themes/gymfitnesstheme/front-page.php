@@ -52,13 +52,13 @@
     </section>
 
     <main class="contenedor seccion">
-        <h2 class="text-center text-primary">Nuestras Clases</h2>
+        <h2 class="text-center text-primary">My Portfolio</h2>
 
         <?php gymfitness_lista_clases(4); ?>
 
         <div class="contenedor-boton">
             <a href="<?php echo esc_url( get_permalink( get_page_by_title('My Class') ) ); ?>" class="boton boton-primario">
-                Ver todas las clases
+                All Projects
             </a>
         </div>
     </main>
@@ -79,7 +79,7 @@
     </section>
 
     <section class="contenedor seccion">
-        <h2 class="text-center text-primary">Nuestro Blog</h2>
+        <h2 class="text-center text-primary">My Blog</h2>
         <p class="text-center">Aprende tips de nuestros instructores expertos</p>
 
         <ul class="listado-grid">

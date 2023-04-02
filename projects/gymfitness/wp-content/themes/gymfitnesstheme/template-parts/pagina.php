@@ -7,6 +7,12 @@
         if(has_post_thumbnail()) {
             the_post_thumbnail('full', ['class' => 'imagen-destacada']);
         }
-        the_content();
+?>
+        <div class="text-justify">
+<?php
+            the_content();
+?>
+        </div>
+<?php
     endwhile;
 ?>
